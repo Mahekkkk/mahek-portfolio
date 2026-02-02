@@ -15,7 +15,7 @@ export default function HeroImage() {
 
       {sayHi && (
         <div className="speech-bubble">
-          Hi 👋
+          Hey!👋
         </div>
       )}
 

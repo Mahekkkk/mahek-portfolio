@@ -5,23 +5,23 @@ const Entry = forwardRef(function Entry(_, ref) {
   return (
     <div ref={ref} className="hero">
       <div className="hero-box cinematic">
-        <span className="eyebrow">👋 Hi, I'm</span>
+        <span className="eyebrow">🚀 Building the web, one idea at a time</span>
 
         <h1 className="hero-title">
-          Mahek <span>Vatyani</span>
+          Hi, I’m <span>Mahek Vatyani</span>
         </h1>
 
         <p className="hero-tagline">
-          I design & build interactive web experiences.
+          Turning ideas into immersive, high-impact web experiences.
         </p>
 
         <p className="hero-subtle">
-          Curious. Calm. Slightly dangerous with code.
+          Frontend wizard • UI perfectionist • Code with intent
         </p>
 
         <div className="hero-buttons">
-          <button className="btn-primary">View My Work</button>
-          <button className="btn-outline">Get In Touch</button>
+          <button className="btn-primary">Explore Projects</button>
+          <button className="btn-outline">Let’s Collaborate</button>
         </div>
       </div>
 
