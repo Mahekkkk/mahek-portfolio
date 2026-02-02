@@ -1,5 +1,5 @@
 import { useState } from "react";
-import myPic from "../assets/me.png";
+import myPic from "../assets/me.jpeg";
 
 export default function HeroImage() {
   const [sayHi, setSayHi] = useState(false);
