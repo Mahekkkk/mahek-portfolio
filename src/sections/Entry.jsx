@@ -1,7 +1,8 @@
 import { forwardRef } from "react";
 import HeroImage from "../components/HeroImage";
 
-const Entry = forwardRef(function Entry(_, ref) {
+const Entry = forwardRef(function Entry({ exitRef }, ref) 
+  {
   return (
     <div ref={ref} className="hero">
       <div className="hero-box cinematic">
@@ -20,8 +21,24 @@ const Entry = forwardRef(function Entry(_, ref) {
         </p>
 
         <div className="hero-buttons">
-          <button className="btn-primary">Explore Projects</button>
-          <button className="btn-outline">Let’s Collaborate</button>
+          <button
+            className="btn-primary"
+            onClick={() =>
+              projectRef.current?.scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            Explore Projects
+          </button>
+
+          <button
+  className="btn-outline"
+  onClick={() =>
+    exitRef?.current?.scrollIntoView({ behavior: "smooth" })
+  }
+>
+  Let’s Collaborate
+</button>
+
         </div>
       </div>
 

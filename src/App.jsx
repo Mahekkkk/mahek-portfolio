@@ -5,18 +5,20 @@ import HowIWork from "./sections/HowIWork";
 import Exit from "./sections/Exit";
 import CursorEffect from "./components/CursorEffect";
 import Background from "./components/Background";
+import Skills from "./sections/Skills";
 
 export default function App() {
   const entryRef = useRef(null);
   const projectRef = useRef(null);
   const howRef = useRef(null);
   const exitRef = useRef(null);
+  const skillsRef = useRef(null);
 
   const lastScroll = useRef(0);
   const [scrollSpeed, setScrollSpeed] = useState(0);
 
   useEffect(() => {
-    const sections = [entryRef, projectRef, howRef, exitRef];
+    const sections = [entryRef, projectRef, howRef, exitRef, skillsRef];
 
     const observer = new IntersectionObserver(
       entries => {
@@ -55,9 +57,10 @@ export default function App() {
       <CursorEffect scrollSpeed={scrollSpeed} />
 
       <main className="app">
-        <Entry ref={entryRef} />
+        <Entry ref={entryRef} projectRef={projectRef} exitRef={exitRef}/>
         <Project ref={projectRef} />
         <HowIWork ref={howRef} />
+        <Skills ref={skillsRef}/>
         <Exit ref={exitRef} />
       </main>
     </>
