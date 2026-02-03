@@ -1,7 +1,7 @@
 import { forwardRef } from "react";
 import HeroImage from "../components/HeroImage";
 
-const Entry = forwardRef(function Entry({ exitRef }, ref) 
+const Entry = forwardRef(function Entry({ projectRef },{ exitRef }, ref ,) 
   {
   return (
     <div ref={ref} className="hero">
