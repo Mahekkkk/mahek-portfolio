@@ -1,24 +1,28 @@
 import { forwardRef } from "react";
 import HeroImage from "../components/HeroImage";
 
-const Entry = forwardRef(function Entry({ projectRef },{ exitRef }, ref ,) 
-  {
+const Entry = forwardRef(function Entry(
+  { projectRef, exitRef },
+  ref
+) {
   return (
     <div ref={ref} className="hero">
       <div className="hero-box cinematic">
-        <span className="eyebrow">🚀 Building the web, one idea at a time</span>
+      <span className="eyebrow">
+  🚀 Open to Software Development Opportunities
+</span>
 
-        <h1 className="hero-title">
-          Hi, I’m <span>Mahek Vatyani</span>
-        </h1>
+<h1 className="hero-title">
+  Hi, I'm <span>Mahek Vatyani</span>
+</h1>
 
-        <p className="hero-tagline">
-          Turning ideas into immersive, high-impact web experiences.
-        </p>
+<p className="hero-tagline">
+  Java Full Stack Developer passionate about building secure, scalable, and user-friendly applications.
+</p>
 
-        <p className="hero-subtle">
-          Frontend wizard • UI perfectionist • Code with intent
-        </p>
+<p className="hero-subtle">
+  Spring Boot • React • MySQL • REST APIs • AWS Learner
+</p>
 
         <div className="hero-buttons">
           <button
@@ -27,7 +31,7 @@ const Entry = forwardRef(function Entry({ projectRef },{ exitRef }, ref ,)
               projectRef.current?.scrollIntoView({ behavior: "smooth" })
             }
           >
-            Explore Projects
+            View My Work
           </button>
 
           <button
@@ -36,7 +40,7 @@ const Entry = forwardRef(function Entry({ projectRef },{ exitRef }, ref ,)
     exitRef?.current?.scrollIntoView({ behavior: "smooth" })
   }
 >
-  Let’s Collaborate
+Hire Me
 </button>
 
         </div>

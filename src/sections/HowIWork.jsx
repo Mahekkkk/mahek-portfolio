@@ -8,23 +8,23 @@ import {
 
 const principles = [
   {
-    title: "Clarity over quantity",
-    text: "I prefer fewer features with clearer behavior.",
+    title: "Problem Solving",
+    text: "I enjoy breaking complex problems into simple, maintainable solutions.",
     icon: Eye
   },
   {
-    title: "Maintainability first",
-    text: "I write code assuming someone else will maintain it.",
+    title: "Clean Architecture",
+    text: "I focus on writing scalable and organized code using industry-standard practices.",
     icon: Wrench
   },
   {
-    title: "Explainability",
-    text: "If something is hard to explain, it’s usually hard to use.",
+    title: "Continuous Learning",
+    text: "I'm constantly exploring new technologies such as AWS, Docker, and Microservices.",
     icon: MessageSquareText
   },
   {
-    title: "Craft",
-    text: "I sometimes write CSS for fun at 2am.",
+    title: "User-Centric Development",
+    text: "I build applications that are secure, intuitive, and provide real value to users.",
     icon: Sparkles
   }
 ];
@@ -33,13 +33,15 @@ const HowIWork = forwardRef(function HowIWork(_, ref) {
   return (
     <section ref={ref} className="how">
       <header className="how-header">
-        <span className="section-eyebrow">Philosophy</span>
-        <h2 className="section-title cinematic-title">
-          How I <span>Work</span>
-        </h2>
-        <p className="section-subtitle">
-          Principles that guide how I design, build, and refine software.
-        </p>
+      <span className="section-eyebrow">My Approach</span>
+
+<h2 className="section-title cinematic-title">
+  How I <span>Build Software</span>
+</h2>
+
+<p className="section-subtitle">
+  The principles that guide my development process and help me create reliable, scalable applications.
+</p>
       </header>
 
       <div className="how-grid">
