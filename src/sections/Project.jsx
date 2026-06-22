@@ -2,7 +2,7 @@ import { forwardRef, useState } from "react";
 import { Github } from "lucide-react";
 import ProjectModal from "./ProjectModal";
 
-import placifyImg from "../assets/placify.png";
+import placifyImg from "../assets/placify.jpeg";
 import acadifyImg from "../assets/acadify.png";
 import echoSpaceImg from "../assets/echospace.jpeg";
 
